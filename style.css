@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs img {
+    margin: 100px 20px;
+    width: 250px;
+    height: 270px;
+    object-fit: cover;
+}
+
+#html:checked ~ .css,
+#html:checked ~ .js,
+#html:checked ~ .ts {
+    opacity: .2;
+    transition: .5s;
+}
+
+#css:checked ~ .html,
+#css:checked ~ .js,
+#css:checked ~ .ts {
+    opacity: .2;
+    transition: .5s;
+}
+
+#js:checked ~ .html,
+#js:checked ~ .css,
+#js:checked ~ .ts {
+    opacity: .2;
+    transition: .5s;
+}
+
+#ts:checked ~ .html,
+#ts:checked ~ .css,
+#ts:checked ~ .js {
+    opacity: .2;
+    transition: .5s;
+}
+
+#all:checked ~ .html,
+#all:checked ~ .css,
+#all:checked ~ .js,
+#all:checked ~ .ts {
+    transition: .5s;
+}
+
+#hero{
+    background: linear-gradient(90deg, yellow, red);
+    min-height: 100vh;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.label{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+    height: 120px;
+    width: 100%;
+}
+.label label{
+    padding: 14px 40px;
+    background: greenyellow;
+    color: #002aff;
+    border-radius: 8pc;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.main{
+    margin: 20px 0;
+    padding: 12px 40px;
+    background: greenyellow;
+    color: #ff0000;
+    border-radius: 8pc;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: sans-serif;
+}
